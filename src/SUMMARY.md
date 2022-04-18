@@ -10,6 +10,7 @@
     - [Types](./stoffel_lang/types.md)
     - [Control Flow](./stoffel_lang/control_flow.md)
     - [Functions](./stoffel_lang/functions.md)
+- [Compiler](./compiler.md)
 - [Consensus](./consensus.md)
 - [Networking](./networking.md)
 - [Smart Contracts](./smart_contracts.md)
