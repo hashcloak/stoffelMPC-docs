@@ -12,23 +12,17 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v2
-
       - uses: actions/checkout@v1
       - name: Build
         uses: ./.github/actions/build
 
   publish:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@master
-
+    - uses: actions/checkout@develop
     - name: Publish
-      uses: netlify/actions/cli@master
+      uses: netlify/actions/cli@develop
       with:
         args: deploy --dir=./book --prod
         secrets: '["ky11tGBMLWrwTCo08GuObK_EAw0JcS8qjAy5gbZcqQ0", "dd774222-6a96-4b3a-9ba6-de4083964987"]'
