@@ -18,6 +18,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Publish
       uses: netlify/actions/cli@master
-      with:
-        args: deploy --dir=./book --prod
-        secrets: '["ky11tGBMLWrwTCo08GuObK_EAw0JcS8qjAy5gbZcqQ0", "dd774222-6a96-4b3a-9ba6-de4083964987"]'
+      run: npx netlify-cli deploy --dir=./book
+      env:
+          NETLIFY_AUTH_TOKEN: "ky11tGBMLWrwTCo08GuObK_EAw0JcS8qjAy5gbZcqQ0"
+          NETLIFY_SITE_ID: "dd774222-6a96-4b3a-9ba6-de4083964987"
