@@ -17,7 +17,6 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish
-      uses: netlify/actions/cli@master
       run: npx netlify-cli deploy --dir=./book
       env:
           NETLIFY_AUTH_TOKEN: "ky11tGBMLWrwTCo08GuObK_EAw0JcS8qjAy5gbZcqQ0"
