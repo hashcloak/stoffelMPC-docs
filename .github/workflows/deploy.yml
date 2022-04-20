@@ -2,12 +2,7 @@ name: deploy to netlify
 
 on:
   push:
-    branches:
-    - develop
-    paths:
-    - "src/**.md"
-    - "book.toml"
-
+    branches: [ develop ]
 
 jobs:
   build:
