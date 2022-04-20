@@ -9,10 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: Build
-        uses: ./.github/actions/build
 
-      - name: Publish
+      - name: Install mdBook
+        uses: extractions/setup-crate@v1
+        with:
+          owner: rust-lang
+          name: mdBook
+
+      - name: Generate static content for the book
+        run: mdbook build
+
+      - name: Deploy static content to netlify
         run: npx netlify-cli deploy --dir=./book
         env:
             NETLIFY_AUTH_TOKEN: "ky11tGBMLWrwTCo08GuObK_EAw0JcS8qjAy5gbZcqQ0"
