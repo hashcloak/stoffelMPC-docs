@@ -12,7 +12,6 @@ jobs:
       - name: Build
         uses: ./.github/actions/build
 
-      - uses: actions/checkout@master
       - name: Publish
         run: npx netlify-cli deploy --dir=./book
         env:
