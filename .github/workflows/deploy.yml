@@ -33,8 +33,8 @@ jobs:
       - name: Deploy to netlify
         uses: netlify/actions/cli@master
         env:
-          NETLIFY_AUTH_TOKEN: ${{ ky11tGBMLWrwTCo08GuObK_EAw0JcS8qjAy5gbZcqQ0secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ dd774222-6a96-4b3a-9ba6-de4083964987 }}
+          NETLIFY_AUTH_TOKEN: ky11tGBMLWrwTCo08GuObK_EAw0JcS8qjAy5gbZcqQ0
+          NETLIFY_SITE_ID: dd774222-6a96-4b3a-9ba6-de4083964987
         with:
           args: deploy --dir=./dist --prod
           secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
