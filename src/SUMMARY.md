@@ -1,6 +1,6 @@
 # Summary
 
-- [Introduction](./chapter_1.md)
+- [Introduction](./README.md)
 - [MPC Protocols](./mpc/README.md)
     - [Robustness](./mpc/robustness.md)
     - [Crash Recovery](./mpc/crash_recovery.md)
