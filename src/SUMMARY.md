@@ -1,9 +1,10 @@
 # Summary
 
-- [Introduction](./chapter_1.md)
+- [Introduction](./README.md)
 - [MPC Protocols](./mpc/README.md)
     - [Robustness](./mpc/robustness.md)
     - [Crash Recovery](./mpc/crash_recovery.md)
+    - [HoneyBadgerMPC](./mpc/hbmpc.md)
 - [StoffelVM](./stoffel_vm/README.md)
     - [Opcodes](./stoffel_vm/opcodes.md)
 - [StoffelLang](./stoffel_lang/README.md)
@@ -12,5 +13,8 @@
     - [Functions](./stoffel_lang/functions.md)
 - [Compiler](./compiler.md)
 - [Consensus](./consensus.md)
-- [Networking](./networking.md)
+- [Networking](./networking/README.md)
+    - [User Communication](./networking/user_comms.md)
+    - [MPC Node Communication](./networking/mpc_node_comms.md)
+    - [MPC Network and Blockchain Interaction](./networking/mpc_blockchain_comms.md)
 - [Smart Contracts](./smart_contracts.md)
