@@ -4,6 +4,7 @@
 - [MPC Protocols](./mpc/README.md)
     - [Robustness](./mpc/robustness.md)
     - [Crash Recovery](./mpc/crash_recovery.md)
+    - [HoneyBadgerMPC](./mpc/hbmpc.md)
 - [StoffelVM](./stoffel_vm/README.md)
     - [Opcodes](./stoffel_vm/opcodes.md)
 - [StoffelLang](./stoffel_lang/README.md)
